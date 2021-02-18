@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChaliceLibrary
 {
-    class Player : Character
+    public class Player : Character
     {
         public CharacterRace Race { get; set; }
         public Weapon EquippedWeapon { get; set; }
@@ -65,7 +65,7 @@ namespace ChaliceLibrary
             //is exclusive.
         }//end CalcDamage Override.
 
-    
-        
+
+
     }
 }
