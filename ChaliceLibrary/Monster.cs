@@ -34,7 +34,5 @@ namespace ChaliceLibrary
         {
             return new Random().Next(MinDamage, MaxDamage + 1);
         }
-
-
     }
 }

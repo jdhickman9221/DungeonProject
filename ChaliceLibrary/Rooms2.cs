@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ChaliceLibrary
 {
-    public class Room //TODO Create Room method
+    public class Rooms2 //TODO Create Room method
     {
-        public static string GetRoom()
+        public static string GetRooms2()
         {
-            string[] rooms =
+            string[] rooms2 =
             {
                //TODO populate room lore
                 "Neither light nor darkvision can penetrate the gloom in this chamber. An unnatural shade fills it, and the room's farthest reaches are barely visible. Near the room's center, you can just barely perceive a lump about the size of a human lying on the floor. (It might be a dead body, a pile of rags, or a sleeping monster that can take advantage of the room's darkness.)",
@@ -39,7 +39,8 @@ namespace ChaliceLibrary
 
                 "You catch a whiff of the unmistakable metallic tang of blood as you open the door. The floor is covered with it, and splashes of blood spatter the walls. Some drops even reach the ceiling. It looks fresh, but you don't see any bodies or footprints leaving the chamber.",
             };
-            return rooms[new Random().Next(rooms.Length)];
+            return rooms2[new Random().Next(rooms2.Length)];
         }
     }//endclass
 }//endnamespace
+

@@ -18,54 +18,49 @@ namespace ChaliceLibrary
 
             switch (race)
             {
-                case CharacterRace.Demon://TODO: make these races like it would be easy, intermediate, hard
-                    MaxLife += 100;
-                    Life += 100;
-                    Block += 40;
-                    HitChance += 6;
-                    Speed += 3;
+                case CharacterRace.Hellion://TODO: make these races like it would be easy, intermediate, hard
+                    MaxLife += 25;
+                    Life += 25;
+                    Block += 4;
+                    HitChance +=5 ;
+                    Speed += 5;                                        
                     break;
 
                 case CharacterRace.Nephalim:
-                    MaxLife += 130;
-                    Life += 130;
-                    Block += 20;
-                    HitChance += 4;
-                    Speed += 9;
+                    MaxLife += 45;
+                    Life += 45;
+                    Block += 6;
+                    HitChance += 10;
+                    Speed += 7;                                       
                     break;
 
                 case CharacterRace.Sentinel:
-                    MaxLife += 150;
-                    Life += 150;
-                    Block += 10;
-                    HitChance += 4;
-                    Speed += 9;
+                    MaxLife += 35;
+                    Life += 35;
+                    Block += 5;
+                    HitChance += 6;
+                    Speed += 6;                                       
                     break;
             }
         }//end ctor
 
         public override string ToString()
         {
-            return string.Format($"{Name}\nRace: {Race}\n {Life} of {MaxLife}\nHit Chance:" +
-                $" {(CalcHitChance())}%\nBlock Chance: {Block}%\nEquipped Weapon: {EquippedWeapon}");
+            return string.Format($"{Name}\nRace: {Race}\nLife {Life} of {MaxLife}\nHitChance: {(CalcHitChance())}%\n" +
+                $"Block Chance: {Block}%\n" +
+                $"Equipped Weapon: {EquippedWeapon}");
         }
 
         public override int CalcHitChance()
         {
-            return HitChance + EquippedWeapon.BonusHitChance; //this is race's hit chance plus the bonus
-            //of the weapon.
-        }//end Calc HitChance Override.
+            return HitChance + EquippedWeapon.BonusHitChance;
+        }
 
         public override int CalcDamage()
         {
             Random rand = new Random();
             int damage = rand.Next(EquippedWeapon.MinDamage, EquippedWeapon.MaxDamage + 1);
-            return damage;//here we want the battle sequence to calculate a random number of damage based
-            //on range of min/max damage that the weapon stats provide, +1 on max damage because the max 
-            //is exclusive.
-        }//end CalcDamage Override.
-
-
-
+            return damage;
+        }
     }
 }

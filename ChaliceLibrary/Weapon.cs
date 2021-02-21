@@ -8,7 +8,7 @@ namespace ChaliceLibrary
 {
     public class Weapon
     {
-        public int _minDamage;
+        private int _minDamage;
         public string Name { get; set; }
         public int MaxDamage { get; set; }
         public int BonusHitChance { get; set; }
@@ -17,10 +17,7 @@ namespace ChaliceLibrary
         public int MinDamage
         {
             get { return _minDamage; }
-            set { _minDamage = value <= MaxDamage ? value : MaxDamage; }//Okay, so here we are setting
-            //the mindamage value by using the value keyword. And we are setting the value to be what
-            //ever is lesser than or equal to MaxDamage. Anything else (which would be greater than or 
-            //equal to would be MaxDamage. This is logic.
+            set { _minDamage = value <= MaxDamage ? value : MaxDamage; }
         }//end MinDamage
 
         public Weapon(string name, int minDamage, int maxDamage, int bonusHitChance, bool isTwoHanded)
@@ -30,14 +27,11 @@ namespace ChaliceLibrary
             MinDamage = minDamage;
             BonusHitChance = bonusHitChance;
             IsTwoHanded = isTwoHanded;
-        }//end ctor
+        }//end FQCTOR
 
         public override string ToString()
         {
-            return string.Format($"{Name}\n Handle: {(!IsTwoHanded ? "Single-Handed" : "Two-Handed")}\nDamage Range: {MinDamage} - {MaxDamage}\nBonus Hit Chance:{BonusHitChance}");
-
-
-
-        }//end Tostring.
+            return string.Format($"{Name}\nGrip Type: {(!IsTwoHanded ? "Single-Handed" : "Two-Handed")}\nDamage Range: {MinDamage} - {MaxDamage}\nBonus Hit Chance: {BonusHitChance}");
+        }//end ToString()
     }
 }

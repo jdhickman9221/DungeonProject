@@ -11,7 +11,7 @@ namespace ChaliceLibrary
 
         Sentinel,
         Nephalim,
-        Demon,
+        Hellion,
 
 
 
