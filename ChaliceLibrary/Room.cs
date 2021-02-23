@@ -13,31 +13,99 @@ namespace ChaliceLibrary
             string[] rooms =
             {
                //TODO populate room lore
-                "Neither light nor darkvision can penetrate the gloom in this chamber. An unnatural shade fills it, and the room's farthest reaches are barely visible. Near the room's center, you can just barely perceive a lump about the size of a human lying on the floor. (It might be a dead body, a pile of rags, or a sleeping monster that can take advantage of the room's darkness.)",
+                "You enter a barren street, blockaded with discarded and ravaged vehicles.\n" +
+                "Rubble and glass is everywhere. The sky beckons with a terrifying storm cloud.\n" +
+                "This storm has a ruby red hue you can make out,\n" +
+                "occasionally when angry lightning shoots across the sky.\n",
 
-                "This room smells strange, no doubt due to the weird sheets of black slime that drip from cracks in the ceiling and spread across the floor. The slime seeps from the shattered stone of the ceiling at a snails crawl, forming a mess of dangling walls of gook. As you watch, a bit of the stuff separates from a sheet and drops to the ground with a wet plop.",
+"This turn into the alley way seems to be the only way\n" +
+"through the wreckage of demolished buildings.\n" +
+"Same sky above raging with lightning. This alley is dark.\n" +
+"With your helmet flashlight you can make out a pair of searing red eyes,\n" +
+"now fixed... now staring...\n",
 
-                "A pungent, earthy odor greets you as you pull open the door and peer into this room. Mushrooms grow in clusters of hundreds all over the floor. Looking into the room is like looking down on a forest. Tall tangles of fungus resemble forested hills, the barren floor looks like a plain between the woods, and even a trickle of water and a puddle of water that pools in a low spot bears a resemblance to a river and lake, respectively.",
+"The only way to advance the scorched city\n" +
+"was through this manhole you've now found yourself in.\n" +
+"You deeply regret this decision as the stench of standing water,\n" +
+"which had been marinading the now discarded human lives scattered around,\n" +
+"can be picked up through your helmet's air filter.\n" +
+"You dash further down the  with heavy plunging boots.\n" +
+"Clopping through these wading bodies so buoyant... Until...\n",
 
-                "This small chamber is a bloody mess. The corpse of a minotaur lies on the floor, its belly carved out. The creature's innards are largely missing, and yet you detect no other wounds. Bloody, froglike footprints track away from the corpse and out an open door.",
+"Finding resources for your equipped weapon in an old parking garage,\n" +
+"was the highlight of your curiosity to enter here. The downside… well.\n",
 
-                "Stinking smoke wafts up from braziers made of skulls set around the edges of this room. The walls bear scratch marks and lines of soot that form crude pictures and what looks like words in some language [Goblin]. To the left lies a pile of rubbish and rubble heaped into a crude dais. The dais has upon it an ironbound chest that has been painted with a goblinlike face. Furs and skins of unknown origin are strewn haphazardly about the floor before the dais.",
+"Blood spattered automatic doors brokenly roll ajar...\n" +
+"This metro station has seen a fair share of action.\n" +
+"Images of a recently functioning society flood your mind.\n" +
+"This just isn't right. Humanity flourished in the commute for better lives once. \n" +
+"Now threatened by this impending demonic presence.\n" +
+"You clench your fist in anger,\n" +
+"but are quickly reminded to be cautious as you hear heavy grunts\n" +
+"from an unhuman sounding set of lungs… To your right!\n",
 
-                "A skeleton dressed in moth-eaten garb lies before a large open chest in the rear of this chamber. The chest is empty, but you note two needles projecting from the now-open lock. Dust coats something sticky on the needles' points.",
+"Candles flicker and partially illuminate the narrow alley.\n" +
+"Discarded and blood drenched newspapers litter every square inch of the pavement here.\n" +
+"Who lit these candles?\n" +
+"You see blood lined calligraphy in some archaic looking language circling what\n" +
+"looks to be a precise pentagram. Demonic language?\n" +
+"A candle at every point of the star, actually burnt out.\n" +
+"It appears to be a summoning circle... Summoned what though?\n",
 
-                " A flurry of bats suddenly flaps through the doorway, their screeching barely audible as they careen past your heads. They flap past you into the rooms and halls beyond. The room from which they came seems barren at first glance.",
+"Climbing through a destroyed elevator shaft,\n" +
+"you reach the third floor of a street level office building.\n" +
+"It is pitch black here.\n" +
+"Occasionally the lightning from the hellish storm outside beams through for a brief moment.\n" +
+"You strategize the rhythm of your footsteps\n" +
+"with the eruption of this angry but now helpful lightning.\n" +
+"You notice you can advance forward between flashes. Slowly...\n" +
+"You expect trouble… Just when will they appear?\n",
 
-                "The scent of earthy decay assaults your nose upon peering through the open door to this room. Smashed bookcases and their sundered contents litter the floor. Paper rots in mold-spotted heaps, and shattered wood grows white fungus.",
+"Sneaking around this set of still standing ever green trees\n" +
+"you find yourself in the middle of a city park.\n" +
+"Blocked in by unmanned city busses lazily scattered about you notice you can only move forward.\n" +
+"There is a playground. Swing set seats only hanging on by a single chain…\n" +
+"You see a single hand poking out of a nearby bush.\n" +
+"It appears to be holding something tightly. You go in for a closer look...\n" +
+"Then...\n",
 
-                "Burning torches in iron sconces line the walls of this room, lighting it brilliantly. At the room's center lies a squat stone altar, its top covered in recently spilled blood. A channel in the altar funnels the blood down its side to the floor where it fills grooves in the floor that trace some kind of pattern or symbol around the altar. Unfortunately, you can't tell what it is from your vantage point.",
+"Running away from a horde of hungry looking demons,\n" +
+"you barricade yourself into the park bathroom.\n" +
+"Trying to set yourself center in these walls you try the stall door... Why?\n" +
+"Why are they always locked in these situations? Did Capcom develop these circumstances?\n" +
+"*BOOM... your barricade failed... Brace yourself!\n",
 
-                "This room looks like it was designed by drow. Rusted metal tiles create a huge mosaic of a spider in the floor, and someone set up rusted gratings like draperies of webs. At the far end of the chamber, the carving of a spider squats on the floor. It's about 3 feet tall and seems molded into the floor. Beyond it stands tall double doors of stone, their surface covered in a glittering web of gold.",
+"Crashed windows reveal the marble floor of the local Police Station.\n" +
+"The locals would have been counting on the help of these officers in the brink of danger...\n" +
+"Helpless though the officers were. They are all just human after all.\n" +
+"You enter hoping to find resources for your equipped weapon.\n" +
+"Batteries, ammunition, anything. You see a few camera monitor feeds behind a desk.\n" +
+"Cameras appear to be working. \n" +
+"You see the shadow of something sprinting past one of the live camer...\n" +
+"Was that down the hall? You brace yourself behind the desk!\n",
 
-                "You open the door to reveal a 10-foot-by-10-foot room with a floor studded with spikes. The bones of some creature lie among the spikes and some insects scuttle away from the desiccated remains. No other doors are in the room, and it appears the door you opened was created to blend in with the walls. Additionally, you see no ceiling. You must be at the bottom of a very deep spiked pit.",
+"Radio chatter lead you to a body holding a walkie talkie.\n" +
+"Slumped, half in and half out of a military issued Jeep,\n" +
+"this body suspended by the still latched seat be...\n" +
+"Whatever was speaking through the radio didn’t seem to be English… Let alone human.\n" +
+"It's as though the demon invasion\n" +
+"was able to override all frequencies we communicate on. How devilish...\n",
 
-                "A chill wind blows against you as you open the door. Beyond it, you see that the floor and ceiling are nothing but iron grates. Above and below the grates the walls extend up and down with no true ceiling or floor within your range of vision. It's as though the chamber is a bridge through the shaft of a great well. Standing on the edge of this shaft, you feel a chill wind pass down it and over your shoulder into the hall beyond.",
 
-                "You catch a whiff of the unmistakable metallic tang of blood as you open the door. The floor is covered with it, and splashes of blood spatter the walls. Some drops even reach the ceiling. It looks fresh, but you don't see any bodies or footprints leaving the chamber.",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             };
             return rooms[new Random().Next(rooms.Length)];
         }

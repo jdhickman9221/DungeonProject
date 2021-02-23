@@ -18,7 +18,7 @@ namespace ChaliceLibrary
         public string Name
         {
             get { return _name; }
-            set { _name = value.Trim(); }
+            set { _name = value.Trim().ToUpper(); }
         }//end Name
 
         public int Life

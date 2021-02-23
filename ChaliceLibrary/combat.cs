@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace ChaliceLibrary
 {
@@ -17,7 +18,34 @@ namespace ChaliceLibrary
             {
                 int damageDealt = attacker.CalcDamage();
                 defender.Life -= damageDealt;
-                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.Beep(600, 30);
+                Thread.Sleep(35);
+                Console.Beep(300, 30);
+                Thread.Sleep(35);
+                Console.Beep(150, 30);
+                Thread.Sleep(35);
+
+                Console.BackgroundColor = ConsoleColor.DarkRed;
+                Console.Clear();
+                Thread.Sleep(30);
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.Clear();
+                Console.BackgroundColor = ConsoleColor.DarkRed;
+                Console.Clear();
+                Thread.Sleep(30);
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.Clear();
+                Console.BackgroundColor = ConsoleColor.DarkRed;
+                Console.Clear();
+                Thread.Sleep(30);
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.Clear();
+
+
+
+
+
+
                 Console.WriteLine($"{attacker.Name} hit {defender.Name} for {damageDealt} damage!");
                 Console.ResetColor();
             }//end if
