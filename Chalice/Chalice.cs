@@ -99,7 +99,7 @@ namespace Chalice
 
                     case ConsoleKey.X:
                         race = CharacterRace.DoomGuy;
-                        equippedWeapon = slayerSword;
+                        equippedWeapon = bloodPunch;
                         validRace = true;
                         break;
 
@@ -1646,7 +1646,10 @@ namespace Chalice
                         {
                             equippedWeapon = plasmaGun;
                         }
-                        
+                        if (race== CharacterRace.DoomGuy)
+                        {
+                            equippedWeapon = slayerSword;
+                        }
                         else
                         {
                             equippedWeapon = demonSwords;
@@ -1669,6 +1672,831 @@ namespace Chalice
                         Console.Clear();
                         reloadLvl1Room = true;
                     }//end if boss
+
+
+
+                    if (playerScore == 40)
+                    {
+
+                        playerBuild.Life = playerBuild.MaxLife;
+                        Console.WriteLine("Your life has been restored...");
+                        Console.Clear();
+                        Console.ResetColor();
+                        Console.BackgroundColor = ConsoleColor.Green;
+                        Console.Clear();
+                        Console.WriteLine("You find ANOTHER room with a large Computer Monitor mounted to the wall.");
+                        Console.ReadLine();
+                        Console.WriteLine("An office chair is turned away from a desk with a single keyboard.\n");
+                        Console.ReadLine();
+                        Console.WriteLine("It looks like someone got up in a hurry. Wait...\n");
+                        Console.ReadLine();
+                        Console.WriteLine("You wonder if that Web Developer guy you found dead was battling these\n" +
+                            "Hellion Preists all alone... His I.D. key card DOES unlock the consoles...");
+                        Console.ReadLine();
+                        Console.Clear();
+                        Console.WriteLine("There is a I.D. card scanner on the desk and\n" +
+                            "you decide to scan the I.D. card you found.");
+                        Console.ReadLine();
+                        Console.WriteLine("Another demonic face filling the screen.\n");
+                        Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                        Console.WriteLine($"YOU WILL PAY FOR THIS!\n");
+                        Console.WriteLine($"YOU KILL OFF ONE OF US HELLION PRIESTS! ");
+                        Console.ReadLine();
+                        Console.WriteLine("YOU HAVE BECOME QUITE THE FOE...");
+                        Console.WriteLine("SO I LOCKED THE DOOR TO THIS ROOM YOU'VE ENTERED!");
+                        Console.ReadLine();
+                        Console.WriteLine("A CODING CHALLENGE! THIS TIME ABOUT FRONT END DEVELOPMENT!");
+                        Console.ReadLine();
+                        Console.WriteLine("ANSWER 7 CODING QUESTIONS TO BEAT ME!\n" +
+                            "I WILL ALTER THIS EARTH EVERY TIME YOU GET ONE WRONG!\n");
+                        Console.ReadLine();
+                        Console.WriteLine($"DO NOT WORRY {race} I HAVE MADE IT FAIR!\n");
+                        Console.ReadLine();
+                        Console.WriteLine("FOR EVERY RIGHT ANSWER I'VE SET ONE OF MY REACTORS TO EXPLODE!\n");
+                        Console.ReadLine();
+                        Console.WriteLine("HELLION PRIESTS LOVE CHALLENGING WORTHY FOE...\n");
+                        Console.ReadLine();
+                        Console.WriteLine("CHOOSE WISELY!\n");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine("An Evil cackle shudders out of it's now visable mandibles...");
+                        Console.ReadLine();
+                        Console.WriteLine("...What a hideous creature...");
+                        Console.ResetColor();
+                        Console.Clear();
+
+                        bool validAnswer11 = false;
+                        do
+                        {
+
+                            Console.WriteLine("\nFinal Hellion Boss: SQL\n" +
+                            "At its most basic level, a website is what?\n\n" +
+                            "A) HTML files;\n" +
+                            "B) A folder with files;\n" +
+                            "C) Scripts;\n" +
+                            "D) Layouts;\n" +
+                            "E) Current Life\n" +
+                            "Esc) to exit");
+                            ConsoleKey userChoice11 = Console.ReadKey().Key;
+                            Console.Clear();
+
+                            switch (userChoice11)
+                            {
+                                case ConsoleKey.A:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest raises a random graveyard from the dead!");
+                                    Console.ReadLine();
+                                    validAnswer11 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.B:
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                    Console.WriteLine("You have chosen correct!");
+                                    Console.ReadLine();
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("YOUR BUTTON TRIGGERS AN EXPLOSION! It harms the Hellion Priest!");
+                                    Console.ReadLine();
+                                    #region                                
+                                    Console.Beep(900, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(600, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(300, 50);
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.Black;
+                                    Console.Clear();
+                                    Console.ResetColor();
+                                    #endregion 
+                                    validAnswer11 = true;
+                                    break;
+
+                                case ConsoleKey.C:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest evaporates a body of recycled drinking water!");
+                                    Console.ReadLine();
+                                    validAnswer11 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.D:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest rains hellfire onto a random city block!");
+                                    Console.ReadLine();
+                                    validAnswer11 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.E:
+                                    Console.WriteLine($"Life:{playerBuild.Life}");
+
+                                    Console.ResetColor();
+                                    break;
+                                case ConsoleKey.Escape:
+                                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                                    Console.WriteLine("You cannot escape this battle.");
+                                    Console.ResetColor();
+                                    break;
+
+                                default:
+                                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                                    Console.WriteLine("You haven't chosen an option that is available to you.\n");
+                                    Console.ResetColor();
+                                    validAnswer11 = false;
+                                    break;
+                            }//end switch player choice                           
+                        } while (validAnswer11 == false);//do while
+                                                        /////////////////////////////End question 1////////////////////////////
+                        bool validAnswer12 = false;
+                        do
+                        {
+
+                            Console.WriteLine("\nHellion Boss 2: Front End Development\n" +
+                            "The highest level parent folder for a project is the _____ folder.\n\n" +
+                            "A) Solution\n" +
+                            "B) Root\n" +
+                            "C) Index\n" +
+                            "D) Home\n" +
+                            "E) Current Life\n" +
+                            "Esc) to exit");
+                            ConsoleKey userChoice12 = Console.ReadKey().Key;
+                            Console.Clear();
+
+                            switch (userChoice12)
+                            {
+                                case ConsoleKey.A:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest makes everyone on Earth forget their UserName and Password!");
+                                    Console.ReadLine();
+                                    validAnswer12 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.B:
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                    Console.WriteLine("You have chosen correct!");
+                                    Console.ReadLine();
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("YOUR BUTTON TRIGGERS AN EXPLOSION! It harms the Hellion Priest!");
+                                    Console.ReadLine();
+                                    #region
+                                    Console.Beep(900, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(600, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(300, 50);
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.Black;
+                                    Console.Clear();
+                                    Console.ResetColor();
+                                    #endregion
+                                    validAnswer12= true;
+                                    break;
+
+                                case ConsoleKey.C:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest destroys a nuclear reactor in Japan!");
+                                    Console.ReadLine();
+                                    validAnswer12 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.D:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest lets loose the Stay Puft Marshmellow Man!");
+                                    Console.ReadLine();
+                                    validAnswer12 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.E:
+                                    Console.WriteLine($"Life:{playerBuild.Life}");
+
+                                    Console.ResetColor();
+                                    break;
+                                case ConsoleKey.Escape:
+                                    Console.WriteLine("You cannot escape this battle.");
+                                    break;
+
+                                default:
+                                    Console.WriteLine("You haven't chosen an option that is available to you.\n");
+                                    validAnswer12 = false;
+                                    break;
+                            }//end switch player choice                           
+                        } while (validAnswer12 == false);//do while
+
+                        bool validAnswer13 = false;
+                        do
+                        {
+                            Console.WriteLine($"\nHellion Boss 2: Front End Development\n" +
+                           "Which of the following is NOT an advantage to using Source Control? \n");
+
+                            Console.WriteLine("" +
+                            "A) Remote Back Up;\n" +
+                            "B) Multiple Developers Can Work At The Same Time;\n" +
+                            "C) Long Term Change History;\n" +
+                            "D) Easier To Deploy A Website;\n" +
+                            "E) Current Life\n" +
+                            "Esc) to exit");
+                            ConsoleKey userChoice13 = Console.ReadKey().Key;
+                            Console.Clear();
+
+                            switch (userChoice13)
+                            {
+                                case ConsoleKey.A:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest makes all packages from Amazon arrive 1 day late!");
+                                    Console.ReadLine();
+                                    validAnswer13 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.B:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest makes everyone board all trains, BEFORE anyone has gotten off!\n" +
+                                        "Now it will never be fixed!");
+                                    Console.ReadLine();
+                                    validAnswer13 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.C:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest slows everyone's Wi-Fi!\n" +
+                                        "Now it will never be fixed!");
+                                    Console.ReadLine();
+                                    validAnswer13 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.D:
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                    Console.WriteLine("You have chosen correct!");
+                                    Console.ReadLine();
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("YOUR BUTTON TRIGGERS AN EXPLOSION! It harms the Hellion Priest!");
+                                    Console.ReadLine();
+                                    #region 
+                                    Console.Beep(900, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(600, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(300, 50);
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.Black;
+                                    Console.Clear();
+                                    Console.ResetColor();
+                                    #endregion
+                                    validAnswer13 = true;
+                                    break;
+
+                                case ConsoleKey.E:
+                                    Console.WriteLine($"Life:{playerBuild.Life}");
+
+                                    Console.ResetColor();
+                                    break;
+                                case ConsoleKey.Escape:
+                                    Console.WriteLine("You cannot escape this boss battle.");
+                                    break;
+
+                                default:
+                                    Console.WriteLine("You haven't chosen an option that is available to you.\n");
+                                    validAnswer13 = false;
+                                    break;
+                            }//end switch player choice  
+
+
+                        } while (validAnswer13 == false);//do while
+
+                        bool validAnswer14 = false;
+                        do
+                        {
+                            Console.WriteLine($"\nHellion Boss 2: Front End Development\n" +
+                           " This Git operation saves a copy of changes to the local repository.\n");
+
+                            Console.WriteLine("" +
+                            "A) Commit;\n" +
+                            "B) Push;\n" +
+                            "C) Pull = true;\n" +
+                            "D) Branch = false;\n" +
+                            "E) Current Life\n" +
+                            "Esc) to exit");
+                            ConsoleKey userChoice14 = Console.ReadKey().Key;
+                            Console.Clear();
+
+                            switch (userChoice14)
+                            {
+                                case ConsoleKey.A:
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                    Console.WriteLine("You have chosen correct!");
+                                    Console.ReadLine();
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("YOUR BUTTON TRIGGERS AN EXPLOSION! It harms the Hellion Priest!");
+                                    Console.ReadLine();
+                                    #region 
+                                    Console.Beep(900, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(600, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(300, 50);
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.Black;
+                                    Console.Clear();
+                                    Console.ResetColor();
+                                    #endregion
+                                    validAnswer14 = true;
+                                    break;
+
+                                case ConsoleKey.B:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest ding-dong ditches everyone's house at once!\n" +
+                                        "Now it will never be fixed!");
+                                    Console.ReadLine();
+                                    validAnswer14= false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.C:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest charges everyone double on their personal property tax!\n" +
+                                        "Now it will never be fixed!");
+                                    Console.ReadLine();
+                                    validAnswer14 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.D:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest raises the cost of living globally!");
+                                    Console.ReadLine();
+                                    validAnswer14 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.E:
+                                    Console.WriteLine($"Life:{playerBuild.Life}");
+
+                                    Console.ResetColor();
+                                    break;
+                                case ConsoleKey.Escape:
+                                    Console.WriteLine("You cannot escape this boss battle.");
+                                    break;
+
+                                default:
+                                    Console.WriteLine("You haven't chosen an option that is available to you.\n");
+                                    validAnswer14 = false;
+                                    break;
+                            }//end switch player choice                           
+                        } while (validAnswer14 == false);//do while
+
+                        bool validAnswer15 = false;
+                        do
+                        {
+                            Console.WriteLine($"\nHellion Boss 2: Front End Development\n" +
+                           "This Git operation brings down a copy of the source code\n" +
+                           "from the remote repo and automatically merges\n" +
+                           "the updated version into the local repo.\n");
+
+                            Console.WriteLine("" +
+                            "A) Commit;\n" +
+                            "B) Push;\n" +
+                            "C) Pull;\n" +
+                            "D) Branch;\n" +
+                            "E) Current Life\n" +
+                            "Esc) to exit");
+                            ConsoleKey userChoice15 = Console.ReadKey().Key;
+                            Console.Clear();
+
+                            switch (userChoice15)
+                            {
+                                case ConsoleKey.A:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest makes you step in dog muck!");
+                                    Console.ReadLine();
+                                    validAnswer15 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.B:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest disables turn signals in all cars, globally!");
+                                    Console.ReadLine();
+                                    validAnswer15 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.C:
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                    Console.WriteLine("You have chosen correct!");
+                                    Console.ReadLine();
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("YOUR BUTTON TRIGGERS AN EXPLOSION! It harms the Hellion Priest!");
+                                    Console.ReadLine();
+                                    #region 
+                                    Console.Beep(900, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(600, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(300, 50);
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.Black;
+                                    Console.Clear();
+                                    Console.ResetColor();
+                                    #endregion
+                                    validAnswer15= true;
+                                    break;
+
+                                case ConsoleKey.D:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest lowers the drinking age to 15!");
+                                    Console.ReadLine();
+                                    validAnswer15 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.E:
+                                    Console.WriteLine($"Life:{playerBuild.Life}");
+
+                                    Console.ResetColor();
+                                    break;
+                                case ConsoleKey.Escape:
+                                    Console.WriteLine("You cannot escape this boss battle.");
+                                    break;
+
+                                default:
+                                    Console.WriteLine("You haven't chosen an option that is available to you.\n");
+                                    validAnswer15 = false;
+                                    break;
+                            }//end switch player choice                           
+                        } while (validAnswer15 == false);//do while
+
+                        bool validAnswer16 = false;
+                        do
+                        {
+                            Console.WriteLine($"\nHellion Boss 2: Front End Development\n" +
+                           "In which tier of full stack development would you use HTML?\n");
+
+
+                            Console.WriteLine("" +
+                            "A) Middle End;\n" +
+                            "B) Front Tier;\n" +
+                            "C) Front End;\n" +
+                            "D) Back Tier;\n" +
+                            "E) Current Life\n" +
+                            "Esc) to exit");
+                            ConsoleKey userChoice16 = Console.ReadKey().Key;
+                            Console.Clear();
+
+                            switch (userChoice16)
+                            {
+                                case ConsoleKey.A:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest creates 500 new pot holes in Kansas City!");
+                                    Console.ReadLine();
+                                    validAnswer16 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.B:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest makes it rain on all hang dry clothes, globally!");
+                                    Console.ReadLine();
+                                    validAnswer16 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.C:
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                    Console.WriteLine("You have chosen correct!");
+                                    Console.ReadLine();
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("YOUR BUTTON TRIGGERS AN EXPLOSION! It harms the Hellion Priest!");
+                                    Console.ReadLine();
+                                    #region 
+                                    Console.Beep(900, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(600, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(300, 50);
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.Black;
+                                    Console.Clear();
+                                    Console.ResetColor();
+                                    #endregion
+                                    validAnswer16 = true;
+                                    break;
+
+                                case ConsoleKey.D:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest creates a new mandatory Windows 10 update for all PCs!");
+                                    Console.ReadLine();
+                                    validAnswer16 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.E:
+                                    Console.WriteLine($"Life:{playerBuild.Life}");
+
+                                    Console.ResetColor();
+                                    break;
+                                case ConsoleKey.Escape:
+                                    Console.WriteLine("You cannot escape this boss battle.");
+                                    break;
+
+                                default:
+                                    Console.WriteLine("You haven't chosen an option that is available to you.\n");
+                                    validAnswer16 = false;
+                                    break;
+                            }//end switch player choice                           
+                        } while (validAnswer16 == false);//do while
+
+                        bool validAnswer17 = false;
+                        do
+                        {
+                            Console.WriteLine($"\nHellion Boss 2: Front End Development\n" +
+                           "What protocol or protocols are the communication\n" +
+                           "standard between browsers and servers?\n");
+
+
+                            Console.WriteLine("" +
+                            "A) DSN, HTTP;\n" +
+                            "B) FTP, IMAP;\n" +
+                            "C) HTTPS, FTP;\n" +
+                            "D) HTTP, HTTPS;\n" +
+                            "E) Current Life\n" +
+                            "Esc) to exit");
+                            ConsoleKey userChoice10 = Console.ReadKey().Key;
+                            Console.Clear();
+
+                            switch (userChoice10)
+                            {
+                                case ConsoleKey.A:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest takes all the rolls of T.P. in 500 random public bathroom stalls!");
+                                    Console.ReadLine();
+                                    validAnswer17 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.B:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest takes drying towels from 1000 random showering people!\n" +
+                                        "Now it will never be fixed!");
+                                    Console.ReadLine();
+                                    validAnswer17 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.C:
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    playerBuild.Life = playerBuild.Life - 5;
+                                    Console.WriteLine("Incorrect answer. Hellion Priest leaves you on read!\n" +
+                                        "Now it will never be fixed!");
+                                    Console.ReadLine();
+                                    validAnswer17 = false;
+                                    Console.ResetColor();
+                                    break;
+
+                                case ConsoleKey.D:
+                                    Console.ForegroundColor = ConsoleColor.Green;
+                                    Console.WriteLine("You have chosen correct!");
+                                    Console.ReadLine();
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("YOUR BUTTON TRIGGERS AN EXPLOSION! It harms the Hellion Priest!");
+                                    Console.ReadLine();
+                                    #region 
+                                    Console.Beep(900, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(600, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(300, 50);
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.Black;
+                                    Console.Clear();
+                                    Console.ResetColor();
+                                    Console.Beep(900, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(600, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(300, 50);
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.Black;
+                                    Console.Clear();
+                                    Console.ResetColor();
+                                    Console.Beep(900, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(600, 50);
+                                    Thread.Sleep(50);
+                                    Console.Beep(300, 50);
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                                    Console.Clear();
+                                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                                    Console.Clear();
+                                    Thread.Sleep(50);
+                                    Console.BackgroundColor = ConsoleColor.Black;
+                                    Console.Clear();
+                                    Console.ResetColor();
+                                    #endregion
+                                    validAnswer17 = true;
+                                    break;
+
+                                case ConsoleKey.E:
+                                    Console.WriteLine($"Life:{playerBuild.Life}");
+
+                                    Console.ResetColor();
+                                    break;
+                                case ConsoleKey.Escape:
+                                    Console.WriteLine("You cannot escape this boss battle.");
+                                    break;
+
+                                default:
+                                    Console.WriteLine("You haven't chosen an option that is available to you.\n");
+                                    validAnswer17 = false;
+                                    break;
+                            }//end switch player choice                           
+                        } while (validAnswer17 == false);//do while
+
+                        playerContinueCount++;
+                        Console.WriteLine("A false wall opens up revealing a chest: +7 Adversary Blood Droplets.\n" +
+                                   "Demonic blood is collected into your chalice.");
+                        Console.ReadLine();
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        if (race == CharacterRace.Sentinel)
+                        {
+                            equippedWeapon = superShotgun;
+                        }
+                        if (race == CharacterRace.Nephalim)
+                        {
+                            equippedWeapon = plasmaGun;
+                        }
+                        if (race == CharacterRace.DoomGuy)
+                        {
+                            equippedWeapon = slayerSword;
+                        }
+                        else
+                        {
+                            equippedWeapon = demonSwords;
+                        }
+                        Console.WriteLine($"Inside the chest you you also find:\n" +
+                            $"{equippedWeapon}!\n\n\n{equippedWeapon.Name} is now equipped.");
+                        Console.ReadLine();
+                        Console.ResetColor();
+                        Console.Clear();
+                        string levelTwo = @"
+                                             _                _   _                 
+                                            | |              | | | |                
+                                            | | _____   _____| | | |___      _____  
+                                            | |/ _ \ \ / / _ \ | | __\ \ /\ / / _ \ 
+                                            | |  __/\ V /  __/ | | |_ \ V  V / (_) |
+                                            |_|\___| \_/ \___|_|  \__| \_/\_/ \___/ 
+";
+                        Console.WriteLine(levelTwo);
+                        Console.ReadLine();
+                        Console.Clear();
+                        reloadLvl1Room = true;
+                    }//end if boss
+
+
+
+
+
+
+
+
+
                 } while (reloadLvl1Room != true && exit != true);
             } while (exit != true);
             Console.WriteLine($"You killed {playerScore} demons{(playerScore == 1 ? "" : "s")}.");
