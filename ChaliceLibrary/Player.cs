@@ -41,6 +41,13 @@ namespace ChaliceLibrary
                     HitChance += 6;
                     Speed += 6;                                       
                     break;
+                case CharacterRace.DoomGuy:
+                    MaxLife += 45;
+                    Life += 45;
+                    Block += 6;
+                    HitChance += 20;
+                    Speed += 20;
+                    break;
             }
         }//end ctor
 

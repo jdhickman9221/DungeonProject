@@ -12,6 +12,7 @@ namespace ChaliceLibrary
         Sentinel,
         Nephalim,
         Hellion,
+        DoomGuy,
 
 
 

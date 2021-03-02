@@ -34,7 +34,12 @@ namespace Chalice
             Weapon superShotgun = new Weapon("Holy Super Shotgun", 1, 15, 6, true);
             Weapon plasmaGun = new Weapon("Sentinel King's Plasma Cannon", 1, 15, 6, false);
 
-            Weapon equippedWeapon = new Weapon("", 1, 1, 1, false);//creaing weapon that can be reassigned.
+            //DoomGuy Weapons            
+            Weapon bloodPunch = new Weapon("Slayer Fists", 40, 40, 0, true);
+            Weapon slayerSword = new Weapon("Slayer Sword", 40, 40, 0, true);
+            Weapon bfg = new Weapon("BFG", 100, 100, 0, true);
+
+            Weapon equippedWeapon = new Weapon("", 1, 1, 1, false);//creating weapon that can be reassigned.
             Weapon[] startWeapon =
             {
                 demonClaws, chainGun, sentinelGun, demonSword, rocket, sentinelGuns, demonSwords, superShotgun, plasmaGun
@@ -89,6 +94,12 @@ namespace Chalice
                     case ConsoleKey.H:
                         race = CharacterRace.Hellion;
                         equippedWeapon = demonClaws;
+                        validRace = true;
+                        break;
+
+                    case ConsoleKey.X:
+                        race = CharacterRace.DoomGuy;
+                        equippedWeapon = slayerSword;
                         validRace = true;
                         break;
 
@@ -641,7 +652,7 @@ namespace Chalice
                                 case ConsoleKey.D:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest rains hellfire onto a random city block!");
+                                    Console.WriteLine("Incorrect answer. Hellion Priest straightens the 'Leaning Tower of Pisa'!");
                                     Console.ReadLine();
                                     validAnswer2 = false;
                                     Console.ResetColor();
@@ -824,6 +835,8 @@ namespace Chalice
                         {
                             equippedWeapon = rocket;
                         }
+                        if (race== CharacterRace.DoomGuy)
+
                         else
                         {
                             equippedWeapon = demonSword;
@@ -959,7 +972,7 @@ namespace Chalice
                                 case ConsoleKey.C:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest rains hellfire onto a random city block!");
+                                    Console.WriteLine("Incorrect answer. Hellion Priest evaporates a body of recycled drinking water!");
                                     Console.ReadLine();
                                     validAnswer4 = false;
                                     Console.ResetColor();
@@ -1014,7 +1027,7 @@ namespace Chalice
                                 case ConsoleKey.A:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest Crashes the stock market!");
+                                    Console.WriteLine("Incorrect answer. Hellion Priest makes everyone on Earth forget their UserName and Password!");
                                     Console.ReadLine();
                                     validAnswer5 = false;
                                     Console.ResetColor();
@@ -1057,7 +1070,7 @@ namespace Chalice
                                 case ConsoleKey.C:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest Crashes the stock market!");
+                                    Console.WriteLine("Incorrect answer. Hellion Priest destroys a nuclear reactor in Japan!");
                                     Console.ReadLine();
                                     validAnswer5 = false;
                                     Console.ResetColor();
@@ -1066,7 +1079,7 @@ namespace Chalice
                                 case ConsoleKey.D:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest rains hellfire onto a random city block!");
+                                    Console.WriteLine("Incorrect answer. Hellion Priest lets loose the Stay Puft Marshmellow Man!");
                                     Console.ReadLine();
                                     validAnswer5 = false;
                                     Console.ResetColor();
@@ -1109,7 +1122,7 @@ namespace Chalice
                                 case ConsoleKey.A:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest okay's another SpiderMan Reboot!");
+                                    Console.WriteLine("Incorrect answer. Hellion Priest makes all packages from Amazon arrive 1 day late!");
                                     Console.ReadLine();
                                     validAnswer6 = false;
                                     Console.ResetColor();
@@ -1118,7 +1131,7 @@ namespace Chalice
                                 case ConsoleKey.B:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest deleted the CyberPunk 2077 source code!\n" +
+                                    Console.WriteLine("Incorrect answer. Hellion Priest makes everyone board all trains, BEFORE anyone has gotten off!\n" +
                                         "Now it will never be fixed!");
                                     Console.ReadLine();
                                     validAnswer6 = false;
@@ -1128,7 +1141,7 @@ namespace Chalice
                                 case ConsoleKey.C:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest deleted the CyberPunk 2077 source code!\n" +
+                                    Console.WriteLine("Incorrect answer. Hellion Priest slows everyone's Wi-Fi!\n" +
                                         "Now it will never be fixed!");
                                     Console.ReadLine();
                                     validAnswer6 = false;
@@ -1242,7 +1255,7 @@ namespace Chalice
                                 case ConsoleKey.B:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest deleted the CyberPunk 2077 source code!\n" +
+                                    Console.WriteLine("Incorrect answer. Hellion Priest ding-dong ditches everyone's house at once!\n" +
                                         "Now it will never be fixed!");
                                     Console.ReadLine();
                                     validAnswer7 = false;
@@ -1252,7 +1265,7 @@ namespace Chalice
                                 case ConsoleKey.C:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest deleted the CyberPunk 2077 source code!\n" +
+                                    Console.WriteLine("Incorrect answer. Hellion Priest charges everyone double on their personal property tax!\n" +
                                         "Now it will never be fixed!");
                                     Console.ReadLine();
                                     validAnswer7 = false;
@@ -1262,7 +1275,7 @@ namespace Chalice
                                 case ConsoleKey.D:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest writes a nasty review on Yelp about you!");
+                                    Console.WriteLine("Incorrect answer. Hellion Priest raises the cost of living globally!");
                                     Console.ReadLine();
                                     validAnswer7 = false;
                                     Console.ResetColor();
@@ -1307,7 +1320,7 @@ namespace Chalice
                                 case ConsoleKey.A:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest okay's another SpiderMan Reboot!");
+                                    Console.WriteLine("Incorrect answer. Hellion Priest makes you step in dog muck!");
                                     Console.ReadLine();
                                     validAnswer8 = false;
                                     Console.ResetColor();
@@ -1316,7 +1329,7 @@ namespace Chalice
                                 case ConsoleKey.B:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest writes a nasty review on Yelp about you!");
+                                    Console.WriteLine("Incorrect answer. Hellion Priest disables turn signals in all cars, globally!");
                                     Console.ReadLine();
                                     validAnswer8 = false;
                                     Console.ResetColor();
@@ -1359,7 +1372,7 @@ namespace Chalice
                                 case ConsoleKey.D:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest writes a nasty review on Yelp about you!");
+                                    Console.WriteLine("Incorrect answer. Hellion Priest lowers the drinking age to 15!");
                                     Console.ReadLine();
                                     validAnswer8 = false;
                                     Console.ResetColor();
@@ -1403,7 +1416,7 @@ namespace Chalice
                                 case ConsoleKey.A:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest okay's another SpiderMan Reboot!");
+                                    Console.WriteLine("Incorrect answer. Hellion Priest creates 500 new pot holes in Kansas City!");
                                     Console.ReadLine();
                                     validAnswer9 = false;
                                     Console.ResetColor();
@@ -1412,7 +1425,7 @@ namespace Chalice
                                 case ConsoleKey.B:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest writes a nasty review on Yelp about you!");
+                                    Console.WriteLine("Incorrect answer. Hellion Priest makes it rain on all hang dry clothes, globally!");
                                     Console.ReadLine();
                                     validAnswer9 = false;
                                     Console.ResetColor();
@@ -1455,7 +1468,7 @@ namespace Chalice
                                 case ConsoleKey.D:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest writes a nasty review on Yelp about you!");
+                                    Console.WriteLine("Incorrect answer. Hellion Priest creates a new mandatory Windows 10 update for all PCs!");
                                     Console.ReadLine();
                                     validAnswer9 = false;
                                     Console.ResetColor();
@@ -1500,7 +1513,7 @@ namespace Chalice
                                 case ConsoleKey.A:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest okay's another SpiderMan Reboot!");
+                                    Console.WriteLine("Incorrect answer. Hellion Priest takes all the rolls of T.P. in 500 random public bathroom stalls!");
                                     Console.ReadLine();
                                     validAnswer6 = false;
                                     Console.ResetColor();
@@ -1509,7 +1522,7 @@ namespace Chalice
                                 case ConsoleKey.B:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest deleted the CyberPunk 2077 source code!\n" +
+                                    Console.WriteLine("Incorrect answer. Hellion Priest takes drying towels from 1000 random showering people!\n" +
                                         "Now it will never be fixed!");
                                     Console.ReadLine();
                                     validAnswer10 = false;
@@ -1519,7 +1532,7 @@ namespace Chalice
                                 case ConsoleKey.C:
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     playerBuild.Life = playerBuild.Life - 5;
-                                    Console.WriteLine("Incorrect answer. Hellion Priest deleted the CyberPunk 2077 source code!\n" +
+                                    Console.WriteLine("Incorrect answer. Hellion Priest leaves you on read!\n" +
                                         "Now it will never be fixed!");
                                     Console.ReadLine();
                                     validAnswer10 = false;
@@ -1627,15 +1640,16 @@ namespace Chalice
                         Console.ForegroundColor = ConsoleColor.Green;
                         if (race == CharacterRace.Sentinel)
                         {
-                            equippedWeapon = sentinelGuns;
+                            equippedWeapon = superShotgun;
                         }
                         if (race == CharacterRace.Nephalim)
                         {
-                            equippedWeapon = rocket;
+                            equippedWeapon = plasmaGun;
                         }
+                        
                         else
                         {
-                            equippedWeapon = demonSword;
+                            equippedWeapon = demonSwords;
                         }
                         Console.WriteLine($"Inside the chest you you also find:\n" +
                             $"{equippedWeapon}!\n\n\n{equippedWeapon.Name} is now equipped.");
